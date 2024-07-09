@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "PyRASP ZTAA Agent",
+    "version": "1.0",
+    "description": "ParaCyberBellum Zero-Trust Application Access agent",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "js/background.js",
+        "type": "module"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "html/ztaa.html",
+        "default_icon": {
+            "16": "/img/icon16-inactive.png",
+            "48": "/img/icon48-inactive.png",
+            "128": "/img/icon128-inactive.png"
+        }
+    },
+    "icons": {
+        "16": "/img/icon16.png",
+        "48": "/img/icon48.png",
+        "128": "/img/icon128.png"
+    }
+  }

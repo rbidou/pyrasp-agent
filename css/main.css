@@ -1,0 +1,62 @@
+body {
+    width: 250px;
+}
+  
+.extension-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.extension-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Russo One";
+  font-size: 1.1rem;
+  color: var(--pcb-blue);
+  width:100%;
+  margin-bottom: var(--default-vertical-margin);
+  margin-top: var(--default-vertical-margin);
+}
+
+.extension-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extension-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top: var(--default-vertical-margin);
+}
+
+.extension-button {
+  padding: var(--default-padding);
+  color: var(--main-text-color);
+  background-color: var(--pcb-blue);
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.extension-button:hover {
+  background-color: var(--highlight-color);
+}
+
+input {
+  font-family: var(--default-fonts);
+  border: solid 2px var(--form-border-color);
+  border-radius: .25rem;
+  color: var(--form-text-color);
+  background-color: var(--form-bg-color);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 10px;
+  width: 200px;
+  font-size: medium;
+  font-family: var(--default-fonts);
+}

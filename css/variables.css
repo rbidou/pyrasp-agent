@@ -1,0 +1,133 @@
+:root {
+
+    /**********************************
+    * COLORS
+    **********************************/
+
+    /* Values */
+    --pcb-blue: rgb(28, 65, 123);
+    --dark-blue: rgb(7, 16, 29);
+    --dark-red: rgb(179, 14, 14);
+    --green: rgb(14, 163, 14);
+    --dark-green: rgb(0, 94, 0);
+    --light-grey: rgb(170, 170, 170);
+    --light-grey-transparent: rgba(170,170,170, 0.4);
+    --dark-grey: #666;
+    --light-blue: #69ccfd;
+    --pink: #d8659f;
+    --light-green: #389277;
+    --light-yellow: #c4c082;
+    --light-red: rgb(255, 50, 50);
+    --orange: rgb(255, 136, 0);
+
+    /* Low opacity */
+    --pcb-blue-low: rgba(28, 65, 123, 0.4);
+    --dark-red-low: rgba(179, 14, 14, 0.6);
+    --green-low: rgba(14, 163, 14, 0.6);
+    --orange-low: rgba(255, 136, 0, 0.6);
+
+
+    /* Main Aliases */
+    --main-bg-color: var(--dark-blue);
+    --main-text-color: white;
+    --main-border-color: white;
+    --highlight-color: var(--light-blue);
+    --highlight-text-color: var(--light-blue);
+    --highlight-icon-color: var(--light-blue);
+    --highlight-border-color: var(--light-blue);
+    --alt-bg-color: white;
+    --alt-text-color: var(--dark-blue);
+    --inactive-color: var(--dark-grey);
+    --shadow-color: var(--light-grey);
+    --active-color: var(--light-blue);
+    --success-color: var(--green);
+    --fail-color: var(--dark-red);
+    --warning-color: var(--orange);
+    --info-color: var(--pcb-blue);
+
+    /** Terminal **/
+    --terminal-bg: black;
+    --terminal-border: var(--light-grey);
+    --terminal-text: white;
+    --terminal-error: var(--light-red);
+    --terminal-success: var(--green);
+    --terminal-warning: var(--light-yellow);
+    --terminal-info: var(--light-blue);
+
+    /* Status Aliases */
+    --error-color: var(--dark-red);
+    --success-color: var(--green);
+
+    /* Form Aliases */
+    --form-bg-color: var(--main-bg-color);
+    --form-text-color: var(--main-text-color);
+    --form-border-color: var(--main-border-color);
+    --input-highlight-color: var(--pcb-blue);
+    --button-hover-color: var(--highlight-color);
+
+    /**********************************
+    * SPACING
+    **********************************/
+    --default-padding: .5rem;
+    --default-margin: .5rem;
+    --default-horizontal-margin: .5rem;
+    --default-horizontal-padding: .5rem;
+    --default-vertical-margin: 1rem;
+    --default-vertical-padding: .5rem;
+    --default-spacing: 1rem;
+
+    --small-padding: .2rem;
+    --small-margin: .5rem;
+    --xsmall-margin: .2rem;
+    --large-padding: 1rem;
+    --xlarge-padding: 2rem;
+    --xxlarge-padding: 3rem;
+    --large-horizontal-margin: 1rem;
+    --xlarge-horizontal-margin: 2rem;
+    --large-vertical-margin: 2rem;
+    --xlarge-vertical-margin: 4rem;
+    --large-spacing: 2rem;
+
+    --menu-padding: 1rem 2rem;
+    --inner-padding: 3rem 2rem 1rem 3rem;
+
+    /**********************************
+    * SHAPES
+    **********************************/
+
+    --default-border-radius: .25rem;
+    --large-border-radius: .5rem;
+    --xlarge-border-radius: 1rem;
+    --default-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    /**********************************
+    * FONTS
+    **********************************/
+    
+    --default-fonts: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --pcb-font: "Russo One";
+    --font-weight-light: 100;
+    --font-weight-bold: 500;
+    --terminal-font: "Source Code Pro", monospace;
+    --font-small: 0.9rem;
+    --fint-xsmall: 0.8rem;
+    --font-large: 1.1rem;
+    --font-xlarge: 1.2rem;
+
+
+    /**********************************
+    * JSON
+    **********************************/
+    --json-key-color: var(--light-blue);
+    --json-string-color: var(--green);
+    --json-number-color: white;
+    --json-boolean-color: var(--orange);
+    --json-payload-color: red;
+
+    /**********************************
+    * SIZES
+    **********************************/
+    --navbar-height: 6vh;
+    --module-menu-height: 5rem;
+
+}

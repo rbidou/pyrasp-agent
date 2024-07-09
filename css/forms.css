@@ -1,0 +1,238 @@
+/*******************************************
+                   FORMS
+*******************************************/
+
+/** INPUTS **/
+
+input {
+    font-family: var(--default-fonts);
+    border: solid 2px var(--form-border-color);
+    border-radius: .25rem;
+    color: var(--form-text-color);
+    background-color: var(--form-bg-color);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 10px;
+    width: 300px;
+    font-size: medium;
+    font-family: var(--default-fonts);
+}
+
+input:disabled {
+    border: none;
+}
+
+textarea {
+    font-family: var(--default-fonts);
+    border: solid 2px var(--form-border-color);
+    border-radius: .25rem;
+    color: var(--form-text-color);
+    background-color: var(--form-bg-color);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 10px;
+    width: 300px;
+    font-size: medium;
+    font-family: var(--default-fonts);
+}
+
+textarea:disabled {
+    border: none;
+}
+
+input[type="select"], select {
+    background-color: none;
+    height: 41px;
+}
+
+input[type="select"]:disabled, select:disabled {
+    border:none;
+}
+
+/** BUTTONS **/
+
+.buttons-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="button"],
+input[type="submit"] {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 315px;
+    cursor: pointer;
+    margin-top: .2rem;
+}
+
+.span-button {
+    padding: var(--default-vertical-padding) var(--default-horizontal-padding);
+    width: auto;
+    cursor: pointer;
+    margin-top: .2rem;
+    border-radius: var(--default-border-radius);
+    border: solid 2px var(--main-border-color);
+}
+
+input[type="button"]:hover:not([disabled]),
+input[type="submit"]:hover:not([disabled]),
+.span-button:hover:not([disabled]) {
+    background-color: var(--button-hover-color);
+    color: var(--alt-text-color);
+    font-weight: bold;
+}
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+.span-button:disabled {
+    color: var(--inactive-color);
+    border: solid 2px var(--inactive-color);
+    cursor: initial;
+}
+
+/** CHECKBOX **/
+input[type="checkbox"] {
+    /* Reset system appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0 .25em 0 .25em;
+
+    /* Box appearance */
+    font: inherit;
+    border: solid 1px currentColor;
+    border-radius: 0 !important;
+    color: var(--form-text-color);
+    background-color: var(--form-bg-color);
+    width: 1.15em;
+    height: 1.15em;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Set display */
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    /*clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);*/
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--main-text-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);   
+}
+
+input[type="checkbox"]:disabled,
+input[type="checkbox"]:checked:disabled::before {
+    color: var(--inactive-color);
+    cursor: initial;
+    border-width: 1px;
+    box-shadow: inset 1em 1em var(--inactive-color);
+}
+
+.checkbox-static {
+    cursor: initial;
+    pointer-events: none;
+}
+
+.checkbox-form {
+    display: flex;
+    gap: var(--default-horizontal-padding);
+    align-items: baseline;
+}
+
+.input-small {
+    width: 200px !important;
+}
+
+.error-form {
+    border-color: red !important;
+}
+
+/** SELECT LABEL **/
+.header-list-label {
+    font-size: large;
+    margin-right: var(--large-horizontal-margin);
+}
+
+/** PLACEHOLDER **/
+
+::placeholder                   /* Chrome, Firefox, Opera, Safari 10.1+ */
+{       
+    color: var(--light-grey);
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder          /* Internet Explorer 10-11 */
+{       
+    color: var(--light-grey);
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder         /* Microsoft Edge */
+{       
+    color: var(--light-grey);
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--main-bg-color) inset !important;
+    -webkit-text-fill-color: var(--form-text-color) !important;
+}
+
+/** SELECT **/
+select {
+    font-family: var(--default-fonts);
+    border: solid 2px var(--form-border-color);
+    border-radius: .25rem;
+    color: var(--form-text-color);
+    background-color: var(--form-bg-color);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 10px;
+    width: 316px;
+    font-size: medium;
+}
+
+
+option:hover {
+    background-color: var(--highlight-color);
+    color: var(--highlight-text-color);
+    font-weight: bold;
+}
+
+/** DATE **/
+input[type='date'] {
+    color: var(--light-grey) !important;
+    font-style: italic;
+    background:var(--main-bg-color) url(/img/icons/calendar.svg)  97% 50% no-repeat ;
+    color: white;
+    padding-right: var(--default-horizontal-padding);
+    cursor: pointer !important;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type="date"]::before{
+    content: attr(placeholder)": ";
+    white-space: pre;
+ }
+
+ input[type="date"]:focus::before {
+    content:""!important;
+ }
